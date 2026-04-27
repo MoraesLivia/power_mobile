@@ -123,6 +123,19 @@ docker compose logs -f mysql
 
 ---
 
+## Swagger / OpenAPI
+
+With the application running, API documentation is available at:
+
+- `http://localhost:8080/swagger-ui/index.html`
+- `http://localhost:8080/v3/api-docs`
+
+If the page does not load, confirm the app started successfully and dependency `springdoc-openapi-starter-webmvc-ui` is present in `pom.xml`.
+
+OpenAPI metadata (title, description, version, contact) is configured in `src/main/java/com/powermobile/challenge/config/OpenApiConfig.java`.
+
+---
+
 ## Quick Test
 
 ```powershell
